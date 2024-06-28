@@ -92,3 +92,13 @@ ALTER TABLE dessert AUTO_INCREMENT = 1;
 
 ALTER table side 
     MODIFY COLUMN price decimal(4, 2);
+
+ALTER TABLE drink CHANGE drink_img 
+imgUrl MEDIUMTEXT;
+
+ALTER TABLE drink 
+add COLUMN category VARCHAR(20);
+
+UPDATE appetizer SET app = 'loaded nachos' WHERE app is null;
+
+UPDATE protein SET protein = 'hamburger steak' WHERE protein is null;

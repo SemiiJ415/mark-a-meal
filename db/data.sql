@@ -56,3 +56,10 @@ VALUES (
     'semiij415',
     'Password123!'
 )
+
+UPDATE appetizer SET category = 'appetizer';
+UPDATE protein SET category = 'protein';
+UPDATE side SET category = 'side';
+UPDATE drink SET category = 'drink';
+
+
