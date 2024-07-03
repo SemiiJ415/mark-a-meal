@@ -106,19 +106,27 @@ a{
     border: 1px solid var(--signup);
     border-radius: 5px;
 }
-.signup-btn-div{
-    margin: 10px;
-  
-}
+
 @media (min-width: 768px){
     .signup-btn-div{
+        margin: 10px;
+    }
+    .signup-btn-div{
         display: flex;
+    }
+}
+@media (max-width: 415px) {
+    .sign-up-link{
+        color: white;
+        background-color: var(--signup);
+        padding: 20px;
+        font-size: calc(22px + (26 - 22) * ((100vw - 300px) / (1600 - 300)));
+        line-height: .9;
     }
 }
 .sign-up-link{
     color: white;
     background-color: var(--signup);
-    padding: 20px;
 }
 
 .login-link{
@@ -278,7 +286,7 @@ a{
 .form-text{
     font-weight: 700;
     font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-    color: #d9d9d9;
+    color: black;
 }
 
 .contact-form, .sign-in-form, .login-form{
